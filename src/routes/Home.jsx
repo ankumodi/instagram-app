@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import HomeItem from "../components/HomeItem";
+import HomeItem from "../components/dashboard/Post";
 
 const Home = () => {
   const posts = useSelector((store) => store.posts);

@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import fetchSlice from "./fetchSlice";
-import postsSlice from "./postsSlice";
+import postReducer from "./slices/postSlice";
+import authReducer from "./slices/authSlice";
 const instaStore = configureStore({
   reducer: {
-    posts: postsSlice.reducer,
-    fetchStatus: fetchSlice.reducer,
+    posts: postReducer,
+    auth: authReducer,
   },
 });
 export default instaStore;
